@@ -1,5 +1,3 @@
-// Simple Gradient Half Circle Shape
-// Comillas Negras
 // Task-01
 
 // ProDigy infotech
@@ -12,7 +10,7 @@
 
 import java.util.Scanner;
 
-class Main {
+public class  Task1_TemperatureConversion{
 
     //to convert Celsius to Fahrenheit
     public static double celsiusToFahrenheit(double celsius) {
@@ -61,20 +59,20 @@ class Main {
             case 'C':
                 double fahrenheitFromCelsius = celsiusToFahrenheit(temperature);
                 double kelvinFromCelsius = celsiusToKelvin(temperature);
-                System.out.printf("Temperature in Fahrenheit:", fahrenheitFromCelsius);
-                System.out.printf("Temperature in Kelvin:", kelvinFromCelsius);
+                System.out.printf("Temperature in Fahrenheit: %.2f°F%n", fahrenheitFromCelsius);
+                System.out.printf("Temperature in Kelvin: %.2fK%n", kelvinFromCelsius);
                 break;
             case 'F':
                 double celsiusFromFahrenheit = fahrenheitToCelsius(temperature);
                 double kelvinFromFahrenheit = fahrenheitToKelvin(temperature);
-                System.out.printf("Temperature in Celsius: ", celsiusFromFahrenheit);
-                System.out.printf("Temperature in Kelvin: ", kelvinFromFahrenheit);
+                System.out.printf("Temperature in Celsius: %.2f°C%n", celsiusFromFahrenheit);
+                System.out.printf("Temperature in Kelvin: %.2fK%n", kelvinFromFahrenheit);
                 break;
             case 'K':
                 double celsiusFromKelvin = kelvinToCelsius(temperature);
                 double fahrenheitFromKelvin = kelvinToFahrenheit(temperature);
-                System.out.printf("Temperature in Celsius:", celsiusFromKelvin);
-                System.out.printf("Temperature in Fahrenheit:", fahrenheitFromKelvin);
+                System.out.printf("Temperature in Celsius: %.2f°C%n", celsiusFromKelvin);
+                System.out.printf("Temperature in Fahrenheit: %.2f°F%n", fahrenheitFromKelvin);
                 break;
             default:
                 System.out.println("Invalid unit of measurement. Please enter C, F, or K.");
